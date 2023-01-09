@@ -1,0 +1,1 @@
+@use 'mixins';.section{width:100%;height:100vh;background-image:url(../images/heladoP.jpg)}.section__fondo{width:100%;height:100vh;background-color:rgba(0,0,0,0.574)}.section__fondo h2{color:#fff;text-align:center;position:relative;top:30%}.section__fondo a{color:#fff;text-align:center;position:relative;left:35%;top:40%}

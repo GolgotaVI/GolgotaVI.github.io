@@ -1,0 +1,197 @@
+@use 'mixins';
+$colorP: white;
+
+.menuP{
+    width: 100%;
+    height: 70vh;
+    background-image: url(../images/ice-cream-cone-in-the-stand.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    
+
+    &__fondo{
+        width: 100%;
+        height: 70vh;
+        @include mixins.flexbox(space-evenly);
+        flex-direction: column;
+        background-color: #000000d7;
+
+        h2{
+            
+            color: $colorP;
+            text-align: center;
+            position: relative;
+            top:50px;
+            /*text-align: center;
+            position: relative;
+            top: 30%;*/
+        }
+
+        a{
+            color: $colorP;
+            position: relative;
+            //top: -100px;
+            padding: 10px 20px;
+            background: #25961d;
+        }
+    }
+}
+
+
+.section{
+    
+    &__article{
+        
+       
+    }
+
+    &__titulo{
+            
+        h2{
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        p{
+            text-align: center;
+            margin: 0 10px;
+
+        }
+    }
+
+    &__content{
+        text-align: center;
+        
+        img{
+            width: 200px;
+            height: 200px;
+            border: 5px solid rgb(118, 145, 111);
+            border-radius: 50%;
+            margin: 20px auto;
+        }
+
+        h2{
+            color: black;
+            margin-bottom: 30px;
+        }
+
+        
+    }
+
+    .about{
+
+        width: 100%;
+        padding: 20px;
+            background-image: url(../images/local.jpg);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+    
+        &__fondo{
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+            //transform: translateY(3%);
+    
+            img{
+                margin: 20px auto;
+                width: 90%;
+                height: 200px;
+            }
+    
+            h2{
+                margin: 30px auto;
+            }
+    
+            p{
+                width: 90%;
+                padding-bottom: 50px ;
+            }
+        }
+    }
+
+    .servicios{
+        width: 90%;
+
+        h2{
+            margin: 30px 0;
+            margin-left: 30px;
+        }
+
+        h3{
+            margin: 20px 0;
+
+            img{
+                margin-right: 20px;
+            }
+        }
+
+        p{
+            width: 90%;
+            margin-left: 50px;
+            margin-bottom: 50px;
+        }
+
+        &__img{
+            text-align: center;
+            border: 3px solid white;
+            padding: 5px;
+            box-shadow: 1px 5px 5px 5px gray;
+            margin-bottom: 30px;
+
+            img{
+                width: 98%;
+            }
+        }
+        
+    }
+
+}
+
+.footer{
+    background-color: #373131;
+
+    &__items{
+        width: 90%;
+        text-align: center;
+        padding: 70px 0;
+       
+
+        a{
+            color: white;
+            padding: 0 5px ;
+            border-right: 1px solid white;
+        }
+    }
+
+    &__direccion{
+        color: white;
+        width: 80%;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    &__redes{
+        text-align: center;
+        color: white;
+
+        h2{
+            margin: 20px;
+        }
+
+        img{
+            margin: 0 10px;
+            padding-bottom: 20px;
+        }
+    }
+
+    .copy{
+        color: white;
+        font-size: 13px;
+        text-align: center;
+        padding: 25px 0;
+    }
+}
+
